@@ -1,4 +1,6 @@
-import time
+import requests
+import cProfile
+import cProfile
 
 import requests
 
@@ -13,20 +15,19 @@ def check_website(url):
     except:
         print(f"{url} failed to reach.")
 
-
 base_url = "https://raw.githubusercontent.com/"
 file_name = "bensooter/URLchecker/master/top-1000-websites.txt"
 response = requests.get(base_url + file_name)
 
 websites = response.text.splitlines()
 websites = ["https://" + site.strip() for site in websites if site.strip()]
-websites = websites[:100]  # Limit to 100 for brevity
+websites = websites[:100]
 
-if __name__ == '__main__':
-    start_time = time.time()
 
+def main():
     for website in websites:
         check_website(website)
 
-    end_time = time.time()
-    print(end_time - start_time)
+
+if __name__ == '__main__':
+    cProfile.run("main()", sort="cumtime")

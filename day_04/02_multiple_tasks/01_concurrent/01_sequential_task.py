@@ -1,4 +1,4 @@
-import time
+import cProfile
 
 import requests
 
@@ -7,12 +7,10 @@ def fetch_url(url):
     return requests.get(url).status_code
 
 
-inputs = ['https://httpbin.org/delay/5', 'https://httpbin.org/delay/7']
-
-if __name__ == '__main__':
-    start_time = time.time()
-
+def main():
+    inputs = [f'https://httpbin.org/delay/{wait}' for wait in range(1, 5)]
     outputs = [fetch_url(url) for url in inputs]
 
-    end_time = time.time()
-    print(end_time - start_time)
+
+if __name__ == '__main__':
+    cProfile.run("main()", sort="cumtime")

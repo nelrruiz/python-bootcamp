@@ -1,4 +1,4 @@
-import time
+import cProfile
 from concurrent.futures import ThreadPoolExecutor
 
 import requests
@@ -8,13 +8,12 @@ def fetch_url(url):
     return requests.get(url).status_code
 
 
-inputs = ['https://httpbin.org/delay/5', 'https://httpbin.org/delay/7']
+def main():
+    inputs = [f'https://httpbin.org/delay/{wait}' for wait in range(1, 5)]
+
+    with ThreadPoolExecutor() as pool:
+        outputs = pool.map(fetch_url, inputs)
+
 
 if __name__ == '__main__':
-    start_time = time.time()
-
-    with ThreadPoolExecutor() as executor:
-        outputs = executor.map(fetch_url, inputs)
-
-    end_time = time.time()
-    print(end_time - start_time)
+    cProfile.run("main()", sort="cumtime")

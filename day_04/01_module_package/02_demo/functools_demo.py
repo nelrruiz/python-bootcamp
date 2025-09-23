@@ -1,24 +1,5 @@
-import time
+import cProfile
 from functools import cache
-
-print("Measuring Execution Time:")
-start = time.time()
-
-
-def fib(n):
-    if n <= 1:
-        return n
-    return fib(n - 1) + fib(n - 2)
-
-
-print(fib(38))
-
-end = time.time()
-print(end - start)
-
-print("Measuring Execution Time:")
-start = time.time()
-
 
 @cache
 def fib(n):
@@ -27,7 +8,9 @@ def fib(n):
     return fib(n - 1) + fib(n - 2)
 
 
-print(fib(300))
+def main():
+    print(fib(38))
 
-end = time.time()
-print(end - start)
+
+if __name__ == '__main__':
+    cProfile.run("main()")

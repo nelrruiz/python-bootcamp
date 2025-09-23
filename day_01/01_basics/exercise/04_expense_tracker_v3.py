@@ -1,7 +1,7 @@
 # TODO: Ask the user for three values
-expense_1 = None  # Let the user enter a number
-expense_2 = None  # Let the user enter a number
-expense_3 = None  # Let the user enter a number
+expense_1 = 0  # Let the user enter a number
+expense_2 = 0  # Let the user enter a number
+expense_3 = 0  # Let the user enter a number
 
 # TODO: Then, print each information one line at a time
 print(expense_1)

@@ -1,16 +1,14 @@
-import time
-
+import cProfile
 
 def process(number):
-    time.sleep(10)
-    print("Finished")
+    for _ in range(1_000_000):
+        x = 10 ** 1000
 
 
-if __name__ == "__main__":
-    start_time = time.time()
-
-    inputs = [5, 10, 15]
+def main():
+    inputs = [1, 2, 3]
     outputs = [process(number) for number in inputs]
 
-    end_time = time.time()
-    print(end_time - start_time)
+
+if __name__ == '__main__':
+    cProfile.run("main()", sort="cumtime")

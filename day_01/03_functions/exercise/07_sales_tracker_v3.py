@@ -6,7 +6,11 @@ def add(total):
 
 
 def sub(total):
-    """TODO: Remove total item cost (cost, count) from total and return"""
+    """TODO:
+        Ask for an item_cost
+        Ask for an item_count
+        Calculate the total_item_cost
+        return the total - total_item_cost"""
 
 
 def show(total):
