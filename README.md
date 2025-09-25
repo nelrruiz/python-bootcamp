@@ -4,12 +4,13 @@
 
 ## Introduction
 
-This repository contains original learning materials, hands-on exercises, and code examples for a **Python Programming
+This repository contains original learning materials, hands-on exercises, and code snippets for a **Python Programming
 Fundamentals** course.
 
 It is structured for **complete beginners**, but can also serve as a **crash course for experienced developers** who
-want to quickly get up to speed with Python. The program covers core syntax, control structures, data structures, and
-object-oriented design — then branches into intermediate topics like file I/O, basic GUI development, and web
+want to get up to speed with Python. The program covers core syntax, control structures, data structures, and
+object-oriented design. It then branches into intermediate topics like file input and output, basic app development, and
+web
 fundamentals.
 
 Learning to program is not always easy. But the ability to break down problems, write logical solutions, and build
@@ -42,6 +43,16 @@ For absolute beginners, a **2-week pace** is recommended:
 
 - **4 hours/day**, 5 days a week
 - Allows for deeper review, repetition, and exploration
+
+You can also opt for a **4-week pace**
+
+- **2 hours/day**, 5 days a week
+- Maximize retention and reinforces habit with much less stress
+
+For a busy schedule, you can also opt for **16-weeks** (university pacing)
+
+- **3 hours/week**, either in a single day or divided across days
+- Easier maintenance but might hurt retention if schedule is inconsistent
 
 > You can also do both: finish the bootcamp at full speed, then revisit everything slowly with real-world projects.
 
@@ -130,11 +141,24 @@ git clone https://github.com/Ayumu098/python-bootcamp.git
 
 Then open the folder in your preferred editor.
 
+### Google Collab
+
+If you don’t want to install Python right away, you can use Google Colab. It's like Google Docs, but for Python code.
+
+- Go to [colab.research.google.com](colab.research.google.com)
+- Click "New Notebook"
+- You can write and run Python directly in your browser (no setup required)
+
+It’s great for experimenting and practicing, but keep in mind:
+
+- Files don’t persist locally unless you download them or connect Colab to your Google Drive.
+- Some libraries may not be preinstalled. You can add them with `!pip install library-name`
+- GUI apps (like tkinter) won’t work. Colab is best for console-based code, data science, and quick prototypes.
+
 ## Prerequisites
 
 - Basic computer skills (navigating folders, installing software)
 - Curiosity, patience, and a willingness to learn by doing
-- No prior programming experience needed
 
 ## External Materials & Further Reading
 
@@ -150,6 +174,12 @@ Then open the folder in your preferred editor.
 - *Automate the Boring Stuff with Python* – Al Sweigart
 - *Python Crash Course* – Eric Matthes
 - *Fluent Python* – Luciano Ramalho
+
+### Recommended Channels
+
+- [Visually Explained](https://www.youtube.com/@VisuallyExplainedEducation/videos)
+- [Bro Code](https://www.youtube.com/watch?v=XKHEtdqhLK8&t=3497s)
+- [SDPT Solutions](https://www.youtube.com/watch?v=UBZs0-gUZsU&list=PLVnJhHoKgEmpbmB-Lrb2m4wwq5IPgLHnG)
 
 ### Interactive Practice
 
@@ -231,6 +261,71 @@ If you encounter any bugs or have suggestions for improvement, feel free
 to [open an issue](https://github.com/Ayumu098/python-bootcamp/issues).
 
 Forking and adapting this repo for your own training sessions or learning goals is encouraged.
+
+> If you have any questions or further inquiries, you can email me at stephen.singer@gmail.com
+
+## FAQs
+
+### Do I need to pay for Python or PyCharm?
+
+No. Python is free and open-source. PyCharm is free Community Edition which is all you need for this course.
+
+### Will this be enough to get a programming job?
+
+This bootcamp is a launchpad, not the destination. You'll walk away with a solid foundation and the confidence to read,
+write, and debug Python programs. However, being job-ready usually takes more practice, more projects, and deeper
+specialization (like web development, data science, or automation). Fully appreciate the fundamentals so that any
+advanced topic is easier to approach.
+
+> Think of this as learning to ride a bike. You won’t be racing yet, but you’ll know how to balance, steer, and pedal.
+
+### What if I get stuck or don’t understand something?
+
+Great. That means there's more to learn. Programming is 50% getting stuck. Not even senior developers can code without
+errors or completely understand code. Like any technical skill, it requires careful steps and practice until it becomes
+familiar.
+
+> Walk away from the keyboard. Eat a snack, take a nap, or do something else. Problems often solve themselves when you
+> come back with a fresh brain. Another good thing to do if you're stuck is to explain the problem to a friend. They can
+> give fresh insights and your effort to explain can sometimes reveal logical gaps you may have missed.
+
+Ask questions during the session, Google a lot, and use the repo’s issues page or email if you need extra help.
+
+Here are some techniques to help debug code:
+
+1. **Show Everything:** Add `print()` or log statements to check what your variables look like at each step.
+2. **Go Step by Step:** Don’t try to debug the whole program at once. Isolate the smallest piece that's broken.
+3. **Use a Debugger:** Tools like PyCharm’s debugger or pdb let you pause code and inspect it line by line.
+4. **Reproduce the Bug:** If you can make the error happen consistently, you’re halfway to fixing it.
+
+### How do I improve faster?
+
+1. **Practice Smart:** Solve problems, then check solutions once finished, or after you hit a wall. Looking at the
+   solution isn't cheating. it’s learning. The goal is to bridge the gap between what you tried and how it could be done
+   better. This leads to the next point.
+
+2. **Spot Patterns:** Most problems you face are just remixes of old problems. Learn common patterns (loops, conditions,
+   recursion, searching, sorting) and you’ll start seeing them everywhere. This is where formal books and forums come in
+   handy.
+
+3. **Build Experience:** At first, coding feels like crawling through mud. But every problem you solve makes the next
+   one faster. One day you look back and realize something that used to take you hours now takes minutes.
+
+### What are some tips when approaching problems
+
+1. **Scope the Problem:** Figure out what’s actually being asked. Ignore fluff. Focus on inputs, outputs, and what the
+   code needs to do.
+2. **Think Like a Human:** Solve it by hand first, step by step, before touching code.
+3. **List Unknowns:** Write down everything you don’t understand, then research one by one. If you hit a wall, ask for
+   help.
+4. **Make it Work First:** Pretty code comes later. Get any working solution first, then refactor for readability or
+   efficiency.
+5. **Use Libraries:** Don’t reinvent the wheel. If Python already has a function for it, use it.
+
+### Is there homework?
+
+No mandatory homework. Instead, you’re encouraged to revisit your own code and make it better. Try the harder labs if
+you want a challenge, or tweak your previous solutions to be cleaner and more efficient.
 
 ## Final Note
 
