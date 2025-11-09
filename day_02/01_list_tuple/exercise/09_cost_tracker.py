@@ -9,7 +9,6 @@ def refund(expenses):
 def show(expenses):
     """TODO: Print the current list of expenses and total"""
 
-
 def main():
     running = True
     current_expenses = []
