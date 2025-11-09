@@ -9,3 +9,21 @@ student_scores = (70, 90, 81)
     Student: Joseph scored 81 in the exam.
 """
 print(f"Student: name scored score in the exam")
+
+######################################################### answer
+
+for name, score in zip(student_names, student_scores):
+    print(f"Student: {name} scored {score} in the exam.")
+
+# challenge: get highest score
+
+
+highest_scorer = None
+highest_score = None
+
+for name, score in zip(student_names, student_scores):
+    if highest_score is None or score > highest_score:
+        highest_scorer = name
+        highest_score = score
+
+print(f"{highest_scorer} had the highest score of {highest_score} in the exam.")

@@ -12,3 +12,6 @@ suits = ("Hearts", "Diamonds", "Clubs", "Spades")
     3 of Diamonds
     ...
 """
+for suit in suits:
+    for rank in ranks:
+        print(f"{rank} of {suit}")

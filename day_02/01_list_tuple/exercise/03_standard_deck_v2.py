@@ -18,3 +18,13 @@ cards = []
 """
 
 print(cards)
+
+############################################ answer
+
+for suit in suits:
+    for rank in ranks:
+        print(f"{rank} of {suit}")
+        cards.append(f"({rank}, {suit})")
+
+
+cards = print(*cards, sep=",")
