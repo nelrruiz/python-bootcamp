@@ -7,9 +7,10 @@ entry.pack()
 
 def show_input(event):
 	given_text = entry.get()
+	# print(given_text)
 	label = tkinter.Label(root, text=given_text)
 	label.pack()
 
 root.bind("<Return>", show_input)
-root.bind("<space>", show_input)
+# root.bind("<space>", show_input)
 root.mainloop()

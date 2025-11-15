@@ -9,7 +9,7 @@ user_input = tkinter.StringVar(root, value="Enter any text")
 label = tkinter.Label(root, textvariable=user_input)
 label.pack()
 
-def show_input():
+def show_input(event=None): #so it will work in our 
     given_text = entry.get()
     user_input.set(given_text)
 

@@ -4,9 +4,9 @@ root = tkinter.Tk()
 label = tkinter.Label(
     root,
     text="Hello",
-    font=("Arial", 14, "bold italic"),
-    fg="red",
-    bg="yellow",
+    font=("Arial", 14, "bold italic"), #computer-based
+    fg="red", #foreground = color of font
+    bg="yellow", #backgroun
     width=100,
     height=20,
     padx=10,
