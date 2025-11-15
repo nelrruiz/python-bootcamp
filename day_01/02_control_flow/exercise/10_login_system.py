@@ -7,3 +7,10 @@ password_input = input("Please provide password: ")
 # TODO: Notify user if password is valid
 correct_password_given = None
 print("Access Granted", correct_password_given)
+
+
+############################# answers
+
+# TODO: Notify user if password is valid
+correct_password_given = password_input == correct_password
+print("Access Granted", correct_password_given)

@@ -4,3 +4,8 @@ end = int(input("Enter end: "))
 
 # TODO: Print the numbers start to end
 print()
+
+
+############################## answer
+for item in range(start,end+1):
+    print(item)

@@ -7,3 +7,13 @@ organic = None  # Is it organic?
 print(name)
 print(price)
 print(organic)
+
+# TODO: Fill in the variables based on the item you want to buy
+name = "chocolate"
+price = 100  # How much is the item?
+organic = True  # Is it organic?
+
+# TODO: Then, print each information one line at a time
+print(name)
+print(price)
+print(organic)

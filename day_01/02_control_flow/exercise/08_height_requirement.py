@@ -6,3 +6,14 @@ user_height = None  # User height (in cm)
 # TODO: Notify user if they can enter the ride
 can_enter_ride = None
 print("Can enter the ride:", can_enter_ride)
+
+
+################################################# answers
+
+# TODO: Ask the user for the following inputs
+user_height = int(input("Enter User height (in cm):"))
+
+# TODO: Notify user if they can enter the ride
+can_enter_ride = minimum_height <= user_height
+print("Can enter the ride:", can_enter_ride)
+

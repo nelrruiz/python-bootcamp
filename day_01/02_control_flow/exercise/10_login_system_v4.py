@@ -10,3 +10,14 @@ password_input = input("Please provide password: ")
 correct_credentials = None
 print("Access Granted")
 print("Access Denied")
+
+####################################### answer
+correct_username_given = username_input == correct_username
+correct_password_given = password_input == correct_password
+
+correct_credentials =  correct_password_given and correct_username_given
+
+if correct_credentials:
+    print("Access Granted")
+else:
+    print("Access Denied")

@@ -17,3 +17,10 @@ number = 3
 3 x 9 = 27
 3 x 10 = 30
 """
+
+def multiplication_table(number):
+    for item in range(1,10+1):
+        product = number * item
+        print(f"{number} x {item} = {product}")
+
+multiplication_table(number)

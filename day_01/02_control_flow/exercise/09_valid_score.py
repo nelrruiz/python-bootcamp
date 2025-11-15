@@ -8,3 +8,13 @@ number = None  # Enter number
 # TODO: Notify user if the number is a valid score
 valid_score = None
 print("Valid score:", valid_score)
+
+
+############################################## answers
+
+# TODO: Enter user input
+number = int(input("Enter an integer:"))
+
+# TODO: Notify user if the number is a valid score
+valid_score = min_number<number<max_number
+print("Valid score:", valid_score)
