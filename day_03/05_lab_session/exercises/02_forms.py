@@ -81,18 +81,24 @@ slider.pack()
 # # TODO: Create function for saving values to JSON
 # # TODO: Create button for submit + save
 
-# def save_data(event=None):
-#     data = {
-#         "Name": entry_name.get(),
-#         "Age": entry_age.get(),
-#         "Theme": radio_var.get(),
-#         "Subscribe":check_value.get(),
-#         "Rating": slider_value.get()
-#     }
-    
+def save_data(event=None):
+    data = {
+        "Name": entry_name.get(),
+        "Age": entry_age.get(),
+        "Theme": radio_var.get(),
+        "Subscribe":check_value.get(),
+        "Rating": slider_value.get()
+    }
+    """Save the save_data to a JSON file"""
+    with open("form_data.json", "w") as f:
+            json.dump(data, f, indent=4)
+
+    print("Form saved:", data)
 
 
-# submit_button = tkinter.Button(root, text="Submit", save_data)
-# submit_button.pack()
+submit_button = tkinter.Button(root, text="Submit", command=save_data)
+submit_button.pack()
+
+
 
 root.mainloop()
