@@ -9,8 +9,9 @@ def fib(n):
 
 
 def main():
-    print(fib(38))
+    fib(38)
 
 
 if __name__ == '__main__':
     cProfile.run("main()")
+

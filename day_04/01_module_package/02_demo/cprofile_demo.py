@@ -1,4 +1,4 @@
-import cProfile
+import cProfile #to test if a code is fast or slow; dependent on your laptop's RAM, CPU usage, and computing powers
 
 
 def main():
@@ -7,4 +7,4 @@ def main():
 
 
 if __name__ == '__main__':
-    cProfile.run("main()")
+    cProfile.run("main()") 
